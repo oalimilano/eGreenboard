@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>eGreenboard: sostenibilità</title>
+    <meta name="description" content="eGreenboard è la dashboard di eGlue dedicata alla sostenibilità, ai progetti Impronta Ambientale e GreenRide e ai report ESG aziendali.">
+    <link rel="icon" href="img/fogliaEco_favicon.png">
+    <link rel="icon" href="img/fogliaEco_favicon.png">
+    <link rel="apple-touch-icon" href="img/fogliaEco_favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <!-- SPLASH SCREEN -->
+    <div id="splash-screen">
+      <img src="animation/intro-eco.gif" alt="Logo loading animato" class="splash-gif">
+    </div>
+    <!-- DASHBOARD PRINCIPALE -->
+    <div id="dashboard" style="display:none;">
+      <!-- Link accessibilità -->
+      <header class="nav">
+        <div class="nav-inner">
+          <div class="nav-left-group">
+            <a class="nav-logo" href="https://www.eglue.it/" target="_blank" style="cursor:pointer">
+              <img src="img/logo-eglue.png" alt="eGlue" />
+            </a>
+            <a class="nav-logo" href="#about" style="cursor:pointer">
+              <span>eGreenboard</span>
+            </a>
+          </div>
+          <button class="nav-burger" aria-label="Apri menu">
+            <img src="img/burger-bar.png" alt="Menu" />
+          </button>
+          <nav class="nav-menu">
+            <ul>
+              <li>
+                <a href="#greenride">GreenRide</a>
+              </li>
+              <li>
+                <a href="#acinque">Caso Acinque</a>
+              </li>
+              <li>
+                <a href="#simulatore">Simulatore</a>
+              </li>
+              <li>
+                <a href="#reports">Report</a>
+              </li>
+              <li>
+                <a href="#download">Download</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main id="main">
+        <!-- HERO -->
+        <section class="hero">
+          <video autoplay muted loop playsinline class="hero-video">
+            <source src="animation/bg-eco.mp4" type="video/mp4">
+          </video>
+          <div class="container">
+            <h1>eGlue <span class="accent">eGreenboard</span>
+            </h1>
+            <p class="leadWhite"> La dashboard che raccoglie i principali contenuti sulla sostenibilità di eGlue: <strong>Impronta Ambientale</strong>, <strong>GreenRide</strong> e risorse utili. </p>
+          </div>
+        </section>
+        <!-- ABOUT -->
+        <section class="section" id="about">
+          <div class="container">
+            <h2>Perché eGreenboard</h2>
+            <p>eGreenboard presenta in modo chiaro e trasparente i dati e i progetti aziendali legati alla sostenibilità. <br>È pensata per essere <strong>leggera, accessibile e facilmente aggiornabile</strong>, in linea con i principi della sostenibilità digitale e della comunicazione responsabile. </p>
+            <p>La dashboard consente di: <br>
+            </p>
+            <ul class="checklist">
+              <li>accedere rapidamente ai <strong>report di sostenibilità</strong> (PDF); </li>
+              <li>consultare un <strong>box dedicato alla mobilità sostenibile</strong> con i dati del progetto <i>GreenRide</i>; </li>
+              <li>utilizzare un <strong>simulatore ambientale</strong> per stimare il risparmio di risorse derivante dalla digitalizzazione; </li>
+              <li>scaricare materiali di approfondimento, come il <strong>file Excel del caso Acinque</strong>. </li>
+            </ul>
+            <p>Attraverso una grafica intuitiva e contenuti verificabili, eGreenboard dimostra come il web possa favorire la trasparenza e supportare la diffusione di pratiche aziendali più sostenibili.</p>
+          </div>
+        </section>
+        <!-- GREENRIDE -->
+        <section class="section greenride" id="greenride">
+          <video autoplay muted loop playsinline class="section-video">
+            <source src="animation/green_ride_animation.mp4" type="video/mp4">
+          </video>
+          <div class="container">
+            <h2>
+              <span class="accent">GreenRide</span> — Mobilità sostenibile
+            </h2>
+            <p>eGlue promuove l’uso di e-bike aziendali e monitora i benefici ambientali. <br> La dashboard pubblica mostra chilometri percorsi e CO₂ evitata. </p>
+            <p>
+              <a class="btn secondary" href="https://app.greenride.it/public/dashboard/eglue" target="_blank" rel="noopener"> Apri dashboard GreenRide </a>
+            </p>
+          </div>
+        </section>
+        <!-- CASO ACINQUE (EXPANDABLE) -->
+        <section class="section highlight" id="acinque">
+          <div class="container expander" data-max="1200">
+            <!-- Barra di titolo cliccabile -->
+            <button class="expander-toggle" aria-expanded="false" aria-controls="acinque-content">
+              <div>
+                <span class="expander-title">Impronta Ambientale: Caso Acinque</span>
+                <img src="img/brand-icon-logo_Acinque.png" class="impronta-company-logo">
+              </div>
+              <div>
+                <span class="chevron" aria-hidden="true">▾</span>
+              </div>
+            </button>
+            <!-- Contenuto che si apre/chiude -->
+            <div class="expander-content" id="acinque-content">
+              <p> Il progetto <strong>Impronta Ambientale</strong> mostra i risultati concreti della trasformazione digitale avviata da Acinque con il supporto di eGlue. La conversione dei processi cartacei in digitali ha portato significativi benefici ambientali nel 2022: </p>
+              <div class="stats-grid">
+                <div class="stat-card">
+                  <img src="img/icon-tree.png" alt="Icona albero" class="stat-icon">
+                  <h3>Alberi salvati</h3>
+                  <p class="stat-value">43</p>
+                  <p class="stat-unit">unità</p>
+                </div>
+                <div class="stat-card">
+                  <img src="img/icon-water.png" alt="Icona goccia d'acqua" class="stat-icon">
+                  <h3>Acqua risparmiata</h3>
+                  <p class="stat-value">7,877</p>
+                  <p class="stat-unit">m³</p>
+                </div>
+                <div class="stat-card">
+                  <img src="img/icon-co2.png" alt="Icona CO₂" class="stat-icon" style="width:120px">
+                  <h3>CO₂ risparmiata</h3>
+                  <p class="stat-value">12.532</p>
+                  <p class="stat-unit">kg</p>
+                </div>
+              </div>
+              <div class="compare-wrap">
+                <h3 class="compare-title">Confronto impatti: cartaceo vs digitale</h3>
+                <div class="compare-legend">
+                  <span class="dot red"></span> cartaceo / impatto <span class="dot green"></span> digitale / risparmio
+                </div>
+                <div class="compare-grid">
+                  <!-- alberi -->
+                  <div class="compare-card">
+                    <h4 class="compare-head">ABBATTIMENTO ALBERI</h4>
+                    <div class="bars">
+                      <div class="bar red" style="height:100%">
+                        <span class="val">79,3</span>
+                      </div>
+                      <div class="bar green" style="height:54.2%">
+                        <span class="val">43,0</span>
+                      </div>
+                    </div>
+                    <div class="units">
+                      <span>n. alberi abbattuti</span>
+                      <span>n. alberi salvati</span>
+                    </div>
+                  </div>
+                  <!-- acqua -->
+                  <div class="compare-card">
+                    <h4 class="compare-head">CONSUMO D’ACQUA</h4>
+                    <div class="bars">
+                      <div class="bar red" style="height:100%">
+                        <span class="val">14.535</span>
+                      </div>
+                      <div class="bar green" style="height:54.2%">
+                        <span class="val">7.877</span>
+                      </div>
+                    </div>
+                    <div class="units">
+                      <span>m³ acqua consumata</span>
+                      <span>m³ acqua risparmiata</span>
+                    </div>
+                  </div>
+                  <!-- CO₂ -->
+                  <div class="compare-card">
+                    <h4 class="compare-head">EMISSIONI CO₂</h4>
+                    <div class="bars">
+                      <div class="bar red" style="height:100%">
+                        <span class="val">25.249</span>
+                      </div>
+                      <div class="bar green" style="height:49.6%">
+                        <span class="val">12.532</span>
+                      </div>
+                    </div>
+                    <div class="units">
+                      <span>kg CO₂ immessa</span>
+                      <span>kg CO₂ risparmiata</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="graph-note">
+                <p> I dati evidenziano il contributo della digitalizzazione nella riduzione dell’impatto ambientale: meno carta, meno emissioni e un uso più responsabile delle risorse idriche. </p>
+                <p class="compare-note"> Valori riferiti all’anno 2022 – fonte: calcolo eGlue su dati del progetto <strong>Impronta Ambientale</strong>. </p>
+                <p class="compare-note">Acinque website: <a target="_blank" href="https://www.gruppoacinque.it/">gruppoacinque.it</a>
+                </p>
+                <a class="btn secondary" href="docs/ImprontaAmbientale_Sintesi.pdf" target="_blank">
+                  <img src="img/ico-paper.png" alt="Icona Paper" class="btn-icon">
+                  <span>Approfondisci</span>
+                </a>
+                <a class="btn" href="docs/Acinque_ImprontaAmbientale.xlsx">
+                  <img src="img/ico-downloads.png" alt="Icona Download" class="btn-icon">
+                  <span>Scarica Excel</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SIMULATORE -->
+        <section class="section" id="simulatore">
+          <div class="container">
+            <h2>Simulatore Impronta Ambientale</h2>
+            <p class="muted">Stima i risparmi passando da comunicazioni cartacee a comunicazioni digitali.</p>
+            <form class="simu-grid" onsubmit="return false;">
+              <div class="simu-field">
+                <label for="simu_invii">Comunicazioni convertite al digitale (n)</label>
+                <input id="simu_invii" type="number" min="0" step="1" value="2000">
+              </div>
+              <div class="simu-field">
+                <label for="simu_preset">Fogli medi per invio</label>
+                <select id="simu_preset">
+                  <option value="2.5" selected>Billing (2,5)</option>
+                  <option value="2.8">Vendite (2,8)</option>
+                  <option value="custom">Personalizzato…</option>
+                </select>
+              </div>
+              <div class="simu-field" id="simu_wrap_custom" style="display:none;">
+                <label for="simu_fogli_med">Fogli medi per invio – valore personalizzato</label>
+                <input id="simu_fogli_med" type="number" min="0" step="0.1" value="2.5">
+              </div>
+              <div class="simu-actions">
+                <button type="button" class="btn green" id="simu_calcola" style="cursor:pointer">Calcola risparmi</button>
+              </div>
+            </form>
+            <div class="simu-kpis">
+              <div class="simu-kpi">
+                <span class="simu-kpi-label">
+                  <img src="img/simu-paper.png">Fogli evitati</span>
+                <span class="simu-kpi-val" id="out_fogli">–</span>
+              </div>
+              <div class="simu-kpi">
+                <span class="simu-kpi-label">
+                  <img src="img/simu-tree.png">Alberi salvati</span>
+                <span class="simu-kpi-val" id="out_alberi">–</span>
+              </div>
+              <div class="simu-kpi">
+                <span class="simu-kpi-label">
+                  <img src="img/simu-water.png">Acqua risparmiata (L)</span>
+                <span class="simu-kpi-val" id="out_acqua">–</span>
+              </div>
+              <div class="simu-kpi">
+                <span class="simu-kpi-label">
+                  <img src="img/simu-co2.png">CO₂ evitata (g)</span>
+                <span class="simu-kpi-val" id="out_co2">–</span>
+              </div>
+            </div>
+            <!-- LEGENDA DEI VALORI E FONTE -->
+            <div class="simu-legenda">
+              <h3>Legenda e fonte dei coefficienti</h3>
+              <table class="simu-tabella">
+                <thead>
+                  <tr>
+                    <th>Parametro</th>
+                    <th>Valore di default</th>
+                    <th>Unità</th>
+                    <th>Descrizione</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Parametro">Alberi per foglio</td>
+                    <td data-label="Valore di default">0,000012</td>
+                    <td data-label="Unità">n. alberi</td>
+                    <td data-label="Descrizione">Numero di alberi necessari per produrre un foglio A4</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Parametro">Acqua per foglio</td>
+                    <td data-label="Valore di default">2,2</td>
+                    <td data-label="Unità">litri</td>
+                    <td data-label="Descrizione">Quantità media di acqua impiegata per la produzione di un foglio</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Parametro">CO₂ per foglio</td>
+                    <td data-label="Valore di default">3,5</td>
+                    <td data-label="Unità">grammi</td>
+                    <td data-label="Descrizione">Emissione stimata per la produzione e distribuzione di un foglio</td>
+                  </tr>
+                  <tr>
+                    <td data-label="Parametro">CO₂ per email</td>
+                    <td data-label="Valore di default">2,1</td>
+                    <td data-label="Unità">grammi</td>
+                    <td data-label="Descrizione">Emissione stimata per l’invio di una comunicazione digitale</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="simu-fonte">
+                <strong>Fonte:</strong> stime interne eGlue basate su ricerche ambientali pubbliche e dati medi di settore.
+              </p>
+            </div>
+            <p class="simu-note">
+              <strong>Nota metodologica.</strong> La CO₂ evitata è calcolata come differenza tra l’emissione cartacea (fogli × CO₂/foglio) e l’emissione digitale (email × CO₂/email).
+            </p>
+          </div>
+        </section>
+        <!-- REPORTS -->
+        <section class="section" id="reports">
+          <div class="container">
+            <h2>Report di sostenibilità</h2>
+            <p class="muted">Seleziona un documento per aprirlo o scaricarlo.</p>
+            <div class="cards">
+              <div class="card">
+                <h3>Impronta Ambientale — Sintesi</h3>
+                <p>Metodologia e indicatori: CO₂, acqua, carta.</p>
+                <a class="btn" href="docs/ImprontaAmbientale_Sintesi.pdf" target="_blank">
+                  <img src="img/ico-pdf.png" alt="Icona PDF" class="btn-icon">
+                  <span>Apri PDF</span>
+                </a>
+              </div>
+              <div class="card">
+                <h3>Global Goals Award 2024</h3>
+                <p>Riconoscimento per l’impegno di eGlue nella sostenibilità e nell’innovazione digitale.</p>
+                <a class="btn" href="docs/GlobalGoalsAward2024.pdf" target="_blank">
+                  <img src="img/ico-pdf.png" alt="Icona PDF" class="btn-icon">
+                  <span>Apri PDF</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- DOWNLOAD -->
+        <section class="section" id="download">
+          <div class="container">
+            <h2>Download dati — Caso Acinque</h2>
+            <p>Scarica il file con i calcoli dell’impronta ambientale.</p>
+            <a class="btn" href="docs/Acinque_ImprontaAmbientale.xlsx">
+              <img src="img/ico-downloads.png" alt="Icona Download" class="btn-icon">
+              <span>Scarica Excel</span>
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer class="site-footer">
+        <div class="container">
+          <p class="footer-note">Project Work universitario – <a href="https://www.unipegaso.it/" target="_blank">Università Telematica Pegaso</a>
+          </p>
+          <p class="footer-dedica"> Elaborato e sviluppato da <a href="https://www.linkedin.com/in/omarali999" target="_blank">Omar Ali</a> , nell’ambito del Corso di Laurea in Informatica per le Aziende Digitali (L-31) </p>
+          <small>© <span id="year"></span> eGlue srl · eGreenboard — Sostenibilità. • Icone: <a href="https://www.flaticon.com" target="_blank">Flaticon</a> • Animazioni: <a href="https://www.vecteezy.com/free-videos/" target="_blank">Vecteezy</a>
+          </small>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
