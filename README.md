@@ -34,6 +34,6 @@ La dashboard presenta in modo chiaro i principali **dati ambientali, iniziative 
 
 ## Autore
 
-Sviluppato da **Omar Ali [@oalimilano]**  
-Front-End Developer – *eGlue Srl*  
+Sviluppato da **Omar Ali [@oalimilano], linkedId [https://www.linkedin.com/in/omarali999/]**  
+Front-End Developer – *eGlue Srl [https://www.eglue.it/]*  
 Project Work – *Università Telematica Pegaso*
